@@ -24,3 +24,28 @@ def password():
         Debe contener un numero
     """
     pass
+
+    # Leer contraseña
+    password = input("Ingresar contraseña: ")
+
+    # Variables de validación
+    tiene_numero = False
+
+    # Verificar si tiene al menos un número usando 'in'
+    for digito in "0123456789":
+        if digito in password:
+            tiene_numero = True
+
+    # Verificar longitud
+    es_larga = len(password) >= 8
+
+    # Mensajes según condiciones
+    if es_larga and tiene_numero:
+        print("Contraseña valida")
+
+    if not es_larga:
+        print("Contraseña muy corta")
+
+    if not tiene_numero:
+        print("Debe contener un numero")
+

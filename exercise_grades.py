@@ -19,3 +19,19 @@ def grades():
         Insuficiente
     """
     pass
+
+    nota = input("Ingrese la nota: ")
+
+    if nota in ["9", "10"]:
+        print("Excelente")
+    elif nota in ["7", "8"]:
+        print("Bueno")
+    elif nota in ["5", "6"]:
+        print("Regular")
+    elif nota in ["0", "1", "2", "3", "4"]:
+        print("Insuficiente")
+    else:
+        print("Error")
+
+
+
